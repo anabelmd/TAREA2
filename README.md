@@ -14,13 +14,13 @@
 
 ###2. Atributos aplicables a la etiqueta script
 
-1. **async**. Indica que el script se ejecutará de forma asíncrona, lo que significa que no bloqueará la carga de la página web mientras se descarga y ejecuta el script.
+1. **_async_**. Indica que el script se ejecutará de forma asíncrona, lo que significa que no bloqueará la carga de la página web mientras se descarga y ejecuta el script.
 
 ```JS
 <script src="mi-script.js" async></script>
 ```
 
-2. **integrity**. Se utiliza junto con el atributo "src". Se utiliza para proporcionar una medida de seguridad al cargar recursos externos, como archivos JavaScript o CSS, desde un servidor web. Este atributo garantiza que en la descarga del recurso no haya nada malicioso.
+2. **_integrity_**. Se utiliza junto con el atributo "src". Se utiliza para proporcionar una medida de seguridad al cargar recursos externos, como archivos JavaScript o CSS, desde un servidor web. Este atributo garantiza que en la descarga del recurso no haya nada malicioso.
 
 ```JS
 <script
@@ -29,25 +29,25 @@
   crossorigin="anonymous"></script>
 ```
 
-3. **src**. Especifica la URL del archivo externo.
+3. **_src_**. Especifica la URL del archivo externo.
 
 ```JS
 <script src="mi-script.js"></script>
 ```
 
-4. **type**. Indica el tipo de contenido del script. Los valores están especificados como un MIME type, algunos son: text/javascript, text/ecmascript, application/javascript y application/ecmascript.
+4. **_type_**. Indica el tipo de contenido del script. Los valores están especificados como un MIME type, algunos son: text/javascript, text/ecmascript, application/javascript y application/ecmascript.
    Si el atributo está ausente, por defecto será un script JavaScript.
 
 ```JS
 <script type="text/javascript" src="mi-script.js"></script>
 ```
 
-5. **defer**. Indica que el script se ejecutará después de que la página entera haya sido analizada, pero antes de que se complete la carga. Esto permite que la página continúe cargándose mientras se descarga el script. A diferencia de "async", los scripts con el atributo "defer" se ejecutan en orde.
+5. **_defer_**. Indica que el script se ejecutará después de que la página entera haya sido analizada, pero antes de que se complete la carga. Esto permite que la página continúe cargándose mientras se descarga el script. A diferencia de "async", los scripts con el atributo "defer" se ejecutan en orde.
 
 ```JS
 script src="mi-script.js" defer></script>
 ```
 
-6. **crossorigin**. Se utiliza para controlar cómo se manejan las solicitudes cuando se solicitan recursos desde un dominio diferente al de la página web actual. Este atributo mejora la seguridad y garantiza que los recursos externos sean confiables. Tiene dos valores principales:
-   - anonymous. El recurso se solicita sin incluir credenciales de autenticación del usuario.
-   - use-credentials. Indica que se deben incluir las credenciales del usuario al realizar la solicitud.
+6. **_crossorigin_**. Se utiliza para controlar cómo se manejan las solicitudes cuando se solicitan recursos desde un dominio diferente al de la página web actual. Este atributo mejora la seguridad y garantiza que los recursos externos sean confiables. Tiene dos valores principales:
+   - _anonymous_. El recurso se solicita sin incluir credenciales de autenticación del usuario.
+   - _use-credentials_. Indica que se deben incluir las credenciales del usuario al realizar la solicitud.
