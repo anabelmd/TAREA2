@@ -112,4 +112,4 @@ No existe ningún orden de ejecución de los scripts, se ejecutarán conforme se
 Se usa cuando se desea mantener el orden de ejecución y para asegurarnos de que la web se ha cargado completamente antes de ejecutar el código JavaScript.
 
 ### 5. Sitio recomendado para colocar la etiqueta script.
-Los scripts, antes de que saliesen los atributos async y defer, el sitio recomendado era al final del documento html.
+Los scripts, antes de que saliesen los atributos async y defer, el sitio recomendado era al final del documento html. Ya que cuando se coloca la principio, el navegador lo descarga antes de continuar con el análisis y esto era más lento para los usuarios ya que debían esperara que se procesara todo el código JavaScript antes de ver algo en la pantalla.
